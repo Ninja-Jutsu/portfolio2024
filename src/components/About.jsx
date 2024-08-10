@@ -1,4 +1,5 @@
-import aboutSvg from '../assets/about.svg'
+import aboutSvg from '../assets/about.jpeg'
+
 import SectionTitle from './SectionTitle'
 const About = () => {
   return (
@@ -9,14 +10,21 @@ const About = () => {
       <div className='align-element grid  md:grid-cols-2 items-center gap-16'>
         <img
           src={aboutSvg}
-          className='w-full h-72'
+          className='w-full h-full'
         />
         <article>
           <SectionTitle text='A Glimpse Inside' />
-          <p className='text-stone-600 mt-8 leading-loose'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro omnis exercitationem tempora, aliquid
-            deleniti tenetur vero esse praesentium eaque dicta fugiat? Molestiae expedita, nulla neque error porro sint
-            distinctio possimus!
+          <p className='text-stone-600 mt-8 leading-loose lg:text-xl tracking-wide'>
+            Hi there, this is Ismail, a 30-year-old web developer making waves in the digital landscape of{' '}
+            <span className='text-stone-800 font-semibold'>Singapore</span>. With a passion for crafting elegant and
+            efficient web solutions. My toolkit includes{' '}
+            <span className='text-stone-800 font-semibold tracking-wide'>HTML, CSS, JavaScript</span> & much more, but
+            my real superpower lies in turning concepts into captivating experiences. I&apos;m particularly interested
+            in exploring modern frameworks like React and NextJS.
+            <p>
+              My background as a technical supervisor & retail manager in addition to make me a great addition to your
+              team.
+            </p>
           </p>
         </article>
       </div>

@@ -18,11 +18,11 @@ function MyStory() {
           >
             <img
               src={img}
-              className={`w-full h-full ${direction === 'right' && 'order-2'}`}
+              className={`w-full h-full ${direction === 'right' && 'sm:order-2'}`}
             />
             <article>
               <SectionTitle text={title} />
-              <p className='text-stone-600 mt-8 leading-loose lg:text-xl tracking-wide first-letter:font-bold first-letter:text-3xl'>
+              <p className='text-stone-600 mt-8 leading-loose text-xl tracking-wide sm:text-2xl' >
                 {story}
               </p>
             </article>

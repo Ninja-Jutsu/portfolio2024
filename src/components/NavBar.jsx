@@ -1,24 +1,28 @@
 import { links } from '../data'
+import { FloatingNav } from './ui/floating-navbar'
+
+const items = links.map((link) => {
+  return { link: link.href, key: link.id, name: link.text }
+})
 const NavBar = () => {
   return (
-    <nav className='bg-teal-100 '>
+    <nav className='bg-teal-100'>
       <div className='align-element py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8'>
-        <h2 className='text-3xl font-bold'>
-          Web
-          <span className='text-teal-600'>Dev</span>
-        </h2>
-        <div className='flex gap-x-3 '>
+        <div className='flex gap-x-3'>
           {links.map(({ id, href, text }) => {
             return (
               <a
                 key={id}
                 href={href}
-                className='capitalize text-lg tracking-wide hover:text-teal-600 duration-300'
+                className='capitalize text-xl tracking-wide hover:text-teal-600 duration-300'
               >
                 {text}
               </a>
             )
           })}
+        </div>
+        <div>
+          <FloatingNav navItems={items}  />
         </div>
       </div>
     </nav>

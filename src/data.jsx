@@ -211,7 +211,7 @@ export const myStory = [
     direction: 'right',
   },
   {
-    title: 'Retail Management',
+    title: 'Retail Manager',
     img: Phase4,
     story:
       'Transitioning from the academic world to the fast-paced retail environment presented a unique set of challenges.As a retail manager, I honed my ability to lead and motivate teams while simultaneously managing complexoperational tasks. This role demanded exceptional problem-solving skills, as I frequently encountered unexpectedchallenges that required quick and decisive action. Moreover, retail provided invaluable experience in customerservice and relationship building. Understanding and meeting customer needs became paramount, and I developed astrong ability to communicate effectively and build rapport. These skills, combined with my technicalbackground, have proven to be a valuable asset in various professional settings.',

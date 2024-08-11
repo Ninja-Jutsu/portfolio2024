@@ -22,6 +22,11 @@ export default {
           },
         },
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'], // Replace 'Roboto' with your font family
+        poppins: ['Newsreader', 'serif'],
+        quote: ['Whisper', 'serif'],
+      },
     },
   },
   plugins: [addVariablesForColors],

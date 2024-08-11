@@ -6,7 +6,7 @@ function MyStory() {
     <>
       <section
         className='py-20  align-element'
-        id='about'
+        id='story'
       >
         <SectionTitle text='Journey to Web Dev' />
         {myStory.map(({ title, img, story, direction }) => (

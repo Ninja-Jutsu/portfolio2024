@@ -1,4 +1,4 @@
-import aboutSvg from '../assets/about.jpeg'
+import { contactLinks } from '../data'
 
 import SectionTitle from './SectionTitle'
 const Contact = () => {
@@ -8,15 +8,24 @@ const Contact = () => {
       id='contact'
     >
       <div className='align-element grid  md:grid-cols-2 items-center gap-16'>
-        <img
-          src={aboutSvg}
-          className='w-full h-full'
-        />
         <article>
           <SectionTitle text="Let's create something amazing" />
-          <p className='text-stone-600 mt-8 leading-loose lg:text-xl tracking-wide'>
-            
-          </p>
+          <div className='flex flex-col gap-5 mt-5'>
+            {contactLinks.map((link) => (
+              <div
+                key={link.key}
+                className='flex gap-3 items-center'
+              >
+                <a
+                  href={link.link}
+                  target='_blank'
+                >
+                  {link.icon}
+                </a>
+                {link.key === 3 && <p>{link.link}</p>}
+              </div>
+            ))}
+          </div>
         </article>
       </div>
     </footer>

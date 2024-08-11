@@ -226,25 +226,25 @@ export const myStory = [
   },
 ]
 
-export const socialMedia = [
+export const contactLinks = [
   {
-    key: nanoid(),
+    key: 1,
     link: 'https://www.linkedin.com/in/ismail-bardach-83921a190/',
-    icon: <CiLinkedin />,
+    icon: <CiLinkedin className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
   },
   {
-    key: nanoid(),
+    key: 2,
     link: 'https://www.instagram.com/ismail__bardach/',
-    icon: <FiInstagram />,
+    icon: <FiInstagram className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
   },
   {
-    key: nanoid(),
+    key: 3,
     link: '9376 8062',
-    icon: <FiSmartphone />,
+    icon: <FiSmartphone className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
   },
   {
-    key: nanoid(),
+    key: 4,
     link: 'mailto:ismail.bardach.work@gmail.com',
-    icon: <CiMail />,
+    icon: <CiMail className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
   },
 ]

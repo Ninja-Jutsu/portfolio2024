@@ -62,8 +62,7 @@ export const FloatingNav = ({
               'relative dark:text-neutral-50 items-center flex space-x-1 text-stone-600 dark:hover:text-neutral-300 hover:text-stone-400'
             )}
           >
-            <span className='block sm:hidden'>{navItem.icon}</span>
-            <span className='hidden sm:block text-xl capitalize font-roboto'>{navItem.name}</span>
+            <span className='block text-xl capitalize font-roboto'>{navItem.name}</span>
           </a>
         ))}
       </motion.div>

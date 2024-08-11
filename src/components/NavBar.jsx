@@ -7,14 +7,14 @@ const items = links.map((link) => {
 const NavBar = () => {
   return (
     <nav className='bg-teal-100'>
-      <div className='align-element py-4 flex flex-col  sm:flex-row sm:gap-x-16 sm:items-center sm:py-8'>
+      <div className='align-element py-4 flex  sm:flex-row sm:gap-x-16 sm:items-center justify-center sm:py-8 '>
         <div className='flex gap-x-3'>
           {links.map(({ id, href, text }) => {
             return (
               <a
                 key={id}
                 href={href}
-                className='capitalize text-xl tracking-wide hover:text-teal-600 duration-300'
+                className='capitalize text-xl lg:text-2xl tracking-wide hover:text-teal-600 duration-300'
               >
                 {text}
               </a>
@@ -22,7 +22,7 @@ const NavBar = () => {
           })}
         </div>
         <div>
-          <FloatingNav navItems={items}  />
+          <FloatingNav navItems={items} />
         </div>
       </div>
     </nav>

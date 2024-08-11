@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className='bg-teal-100 py-24 font-poppins'>
       <div className='align-element grid  md:grid-cols-2 items-center gap-8'>
-        <article>
+        <article className='z-10'>
           <h1 className='text-7xl font-bold tracking-wider'>I&apos;m Ismail</h1>
           <p className='mt-4 text-3xl text-stone-700 capitalize tracking-wide'>Full Stack developer</p>
           <p className='mt-2 text-stone-700 capitalize tracking-wide font-quote text-3xl font-bold'>
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </article>
 
-        <article className='hidden md:block '>
+        <article className='absolute right-0 z-0 opacity-15 md:static md:opacity-100'>
           <img
             src={heroImg}
             className='h-80 lg:h-96'

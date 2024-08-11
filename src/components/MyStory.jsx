@@ -9,22 +9,18 @@ function MyStory() {
         id='story'
       >
         <SectionTitle text='Journey to Web Dev' />
-        {myStory.map(({ title, img, story, direction }) => (
+        {myStory.map(({ title, img, story }) => (
           <div
-            className={`align-element grid  md:grid-cols-2 items-center gap-16 mt-10 ${
-              direction === 'right' && 'bg-stone-100'
-            }`}
+            className={`align-element grid  md:grid-cols-custom-layout items-center gap-16 mt-10`}
             key={title}
           >
             <img
               src={img}
-              className={`w-full h-full ${direction === 'right' && 'sm:order-2'}`}
+              className={`sm:w-[500px] sm:h-[500px] w-full h-full`}
             />
             <article>
               <SectionTitle text={title} />
-              <p className='text-stone-600 mt-8 leading-loose text-xl tracking-wide sm:text-2xl' >
-                {story}
-              </p>
+              <p className='text-stone-600 mt-8 leading-loose text-xl tracking-wide sm:text-2xl'>{story}</p>
             </article>
           </div>
         ))}

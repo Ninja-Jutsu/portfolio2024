@@ -3,10 +3,22 @@ import { nanoid } from 'nanoid'
 import { FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaMarkdown } from 'react-icons/fa'
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri'
 import { SiTypescript, SiRadixui, SiShadcnui } from 'react-icons/si'
+
 import { DiMysql, DiMongodb } from 'react-icons/di'
 import BookIt from './assets/images/book-it-final.png'
 import Hired from './assets/images/hired-final.png'
 import TraceIt from './assets/images/trace-it.png'
+
+// My Story:
+import Phase1 from './assets/images/phase-1.png'
+import Phase2 from './assets/images/phase-2.png'
+import Phase3 from './assets/images/phase-3.png'
+import Phase4 from './assets/images/phase-4.png'
+import Phase5 from './assets/images/phase-5.png'
+
+// Contact me:
+import { CiMail, CiLinkedin } from 'react-icons/ci'
+import { FiSmartphone, FiInstagram } from 'react-icons/fi'
 
 export const links = [
   { id: nanoid(), href: '#home', text: 'home' },
@@ -176,30 +188,63 @@ export const projects = [
   },
 ]
 
-const myStory = [
+export const myStory = [
   {
-    Title: 'Early Tech Enthusiast',
+    title: 'Early Tech Enthusiast',
+    img: Phase1,
     story:
       'My innate curiosity about how things worked led me to a deep fascination with technology. As a teenager, I immersed myself in the world of computers, spending countless hours experimenting with hardware and software.This early exposure to problem-solving and troubleshooting fostered a strong foundation in logical thinking and critical analysis. I quickly developed a reputation as a tech-savvy individual among my peers, often called upon to resolve computer-related issues. These experiences honed my ability to diagnose problems efficiently and implement effective solutions.',
+    direction: 'right',
   },
   {
-    Title: 'Neurology Student',
+    title: 'Neurology Student',
+    img: Phase2,
     story:
       'While pursuing a degree in Neurology, I maintained a strong interest in technology. The field of neuroscience exposed me to complex systems and the importance of data analysis. I applied these principles to my understanding of technology, developing a keen eye for identifying patterns and optimizing processes. Although seemingly unrelated, my neurology studies contributed to my ability to think critically, analyze information, and approach problems from multiple perspectives. These skills have proven invaluable in my subsequent roles.',
+    direction: 'left',
   },
   {
-    Title: 'First job: Technical Advisor',
+    title: 'First job: Technical Advisor',
+    img: Phase3,
     story:
-      'My role as a technical advisor provided invaluable hands-on experience with internet infrastructure. Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers, modems, and network configurations. From understanding basic TCP/IP protocols to diagnosing complex hardware malfunctions, I developed a strong foundation in networking fundamentals. Each customer interaction was a learning opportunity. I honed my ability to break down technical jargon into plain language, explaining complex issues in a way that was easily understandable. This experience cultivated strong communication and interpersonal skills, essential for building rapport with clients and effectively resolving their problems. Additionally, I gained exposure to different operating systems and software applications, expanding my technical knowledge base. This diverse experience equipped me with the ability to adapt to various technological environments and quickly learn new systems.',
+      'My role as a technical advisor provided invaluable hands-on experience with internet infrastructure. Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers, modems, and network configurations. From understanding basic TCP/IP protocols to diagnosing complex hardware malfunctions, I developed a strong foundation in networking fundamentals. Each customer interaction was a learning opportunity. I honed my ability to break down technical jargon into plain language, explaining complex issues in a way that was easily understandable. This experience cultivated strong communication and interpersonal skills, essential for building rapport with clients and effectively resolving their problems. Additionally, I gained exposure to different operating systems and software applications, expanding my technical knowledge base.',
+    direction: 'right',
   },
   {
-    Title: 'Retail Management',
+    title: 'Retail Management',
+    img: Phase4,
     story:
       'Transitioning from the academic world to the fast-paced retail environment presented a unique set of challenges.As a retail manager, I honed my ability to lead and motivate teams while simultaneously managing complexoperational tasks. This role demanded exceptional problem-solving skills, as I frequently encountered unexpectedchallenges that required quick and decisive action. Moreover, retail provided invaluable experience in customerservice and relationship building. Understanding and meeting customer needs became paramount, and I developed astrong ability to communicate effectively and build rapport. These skills, combined with my technicalbackground, have proven to be a valuable asset in various professional settings.',
+    direction: 'left',
   },
   {
-    Title: 'Self-Taught Web Developer',
+    title: 'Self-Taught Web Developer',
+    img: Phase5,
     story:
       'Driven by a passion for technology and a desire for a career change, I embarked on a self-taught journey into web development. Leveraging online resources, tutorials, and personal projects, I immersed myself in the world of HTML, CSS, and JavaScript. The transition from a structured learning environment to self-directed learning required discipline and perseverance. Through countless hours of coding and experimentation, I developed a strong foundation in front-end development. I challenged myself by building personal projects, gradually increasing the complexity of my creations. This hands-on approach allowed me to solidify my understanding of web development principles and apply them to real-world scenarios. The self-learning process also fostered a strong problem-solving mindset. Encountering and overcoming coding challenges became an integral part of my growth. I learned to break down complex problems into smaller, manageable steps, and to seek out solutions through online communities and forums.',
+    direction: 'right',
+  },
+]
+
+export const socialMedia = [
+  {
+    key: nanoid(),
+    link: 'https://www.linkedin.com/in/ismail-bardach-83921a190/',
+    icon: <CiLinkedin />,
+  },
+  {
+    key: nanoid(),
+    link: 'https://www.instagram.com/ismail__bardach/',
+    icon: <FiInstagram />,
+  },
+  {
+    key: nanoid(),
+    link: '9376 8062',
+    icon: <FiSmartphone />,
+  },
+  {
+    key: nanoid(),
+    link: 'mailto:ismail.bardach.work@gmail.com',
+    icon: <CiMail />,
   },
 ]

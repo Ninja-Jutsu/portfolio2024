@@ -10,8 +10,8 @@ const ProjectsCard = ({ url, img, github, title, text, techStack }) => {
         alt={title}
         className='w-full object-cover rounded-t-lg h-64 border border-gray-300'
       />
-      <div className='capitalize p-8'>
-        <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
+      <div className='p-8'>
+        <h2 className='text-xl tracking-wide font-medium capitalize'>{title}</h2>
         <p className='mt-4 text-stone-700 leading-loose'>{text}</p>
         <div className='mt-4 flex gap-x-8 justify-center items-center'>
           <a

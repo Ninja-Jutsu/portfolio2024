@@ -178,7 +178,7 @@ export const projects = [
     url: 'https://trace-it-v2.vercel.app/',
     github: 'https://github.com/Ninja-Jutsu/trace-it-v2',
     title: 'Trace-it',
-    text: 'Accelerate software development with our robust issue tracking tool. Easily create, assign, and prioritize tasks to enhance team collaboration and project management.',
+    text: 'Accelerate software development with our robust issue tracking tool. Easily create, assign, and prioritize tasks to enhance team collaboration and project management. Ideal for agile development teams',
     techStack: [
       <RiNextjsFill
         key={nanoid()}

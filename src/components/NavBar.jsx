@@ -6,7 +6,7 @@ const items = links.map((link) => {
 })
 const NavBar = () => {
   return (
-    <nav className='bg-teal-100'>
+    <nav className='bg-teal-300 '>
       <div className='align-element py-4 flex  sm:flex-row sm:gap-x-16 sm:items-center justify-center sm:py-8 '>
         <div className='flex gap-x-3'>
           {links.map(({ id, href, text }) => {

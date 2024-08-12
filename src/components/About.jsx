@@ -1,4 +1,4 @@
-import aboutSvg from '../assets/about.jpeg'
+import aboutSvg from '../assets/about.jpg'
 import { GlareCard } from './ui/glare-card'
 import SectionTitle from './SectionTitle'
 const About = () => {
@@ -8,19 +8,19 @@ const About = () => {
       id='about'
     >
       <div className='align-element grid md:grid-cols-2 gap-6 sm:gap-0 items-center '>
-        <div className='flex sm:justify-center'>
+        <div className='hidden sm:flex sm:justify-center'>
           <GlareCard>
             <img
               src={aboutSvg}
-              className='w-full h-full'
+              className='w-[full] h-full'
             />
           </GlareCard>
         </div>
 
-        {/* <img
+        <img
           src={aboutSvg}
-          className='w-full h-full'
-        /> */}
+          className='w-full h-full rounded-full sm:hidden'
+        />
         <article>
           <SectionTitle text='A Glimpse Inside' />
           <p className='text-stone-600 text-xl mt-8 leading-loose lg:text-2xl tracking-wide'>

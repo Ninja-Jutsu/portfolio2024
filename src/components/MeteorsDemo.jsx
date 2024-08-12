@@ -4,9 +4,9 @@ import { Meteors } from './ui/meteors'
 export function MeteorsDemo({ children }) {
   return (
     <div className=''>
-      <div className=' w-full relative max-w-xs'>
+      <div className=' w-full relative'>
         <div className='absolute inset-0 h-full w-full bg-gradient-to-r from-blue-50 to-teal-50 transform scale-[0.80] rounded-full blur-3xl' />
-        <div className='relative px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start'>
+        <div className='relative py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start'>
           {children}
 
           {/* Meaty part - Meteor effect */}

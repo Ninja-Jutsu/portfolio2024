@@ -25,6 +25,11 @@ import Phase5 from './assets/images/phase-5.png'
 import { CiMail, CiLinkedin } from 'react-icons/ci'
 import { FiSmartphone, FiInstagram } from 'react-icons/fi'
 
+// Languages:
+import arabic from './assets/images/arabic.svg'
+import english from './assets/images/english.svg'
+import french from './assets/images/french.svg'
+
 export const links = [
   { id: nanoid(), href: '#about', text: 'about' },
   { id: nanoid(), href: '#skills', text: 'skills' },
@@ -421,5 +426,26 @@ export const Cards = [
         problems into smaller, manageable steps, and to seek out solutions through online communities and forums. <br />
       </p>
     ),
+  },
+]
+
+export const languages = [
+  {
+    id: 1,
+    name: 'French',
+    designation: 'Proficient',
+    src: french,
+  },
+  {
+    id: 1,
+    name: 'English',
+    designation: 'Proficient',
+    src: english,
+  },
+  {
+    id: 1,
+    name: 'Arabic',
+    designation: 'Native',
+    src: arabic,
   },
 ]

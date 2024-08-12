@@ -15,7 +15,10 @@ export function AppleCardsCarouselDemo() {
 
   return (
     <>
-      <div className='align-element'>
+      <div
+        className='align-element'
+        id='story'
+      >
         <SectionTitle text='Journey to Web Dev' />
       </div>
       <Carousel items={cards} />

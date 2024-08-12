@@ -113,7 +113,7 @@ const Hero = () => {
                   delay={1}
                   duration={1}
                 />
-                <div className='flex gap-x-8 mt-4'>
+                <div className='grid grid-cols-2 justify-center items-start gap-x-8 mt-4 flex-wrap'>
                   <a href='mailto:ismail.bardach.work@gmail.com'>
                     <CiMail className='h-10 w-10 text-stone-500 hover:text-red-500 duration-300' />
                   </a>
@@ -138,7 +138,7 @@ const Hero = () => {
                   </a>
                   <button
                     href='3'
-                    className='flex justify-center items-center gap-2'
+                    className='flex  items-center gap-2'
                     onClick={() => {
                       setShowNum(!showNum)
                     }}

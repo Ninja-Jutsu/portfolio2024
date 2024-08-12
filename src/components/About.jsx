@@ -1,6 +1,8 @@
 import aboutSvg from '../assets/about.jpg'
 import { GlareCard } from './ui/glare-card'
 import SectionTitle from './SectionTitle'
+import { AnimatedTooltip } from './ui/animated-tooltip'
+import { languages } from '../data'
 const About = () => {
   return (
     <section
@@ -34,7 +36,26 @@ const About = () => {
               My background as a technical supervisor & retail manager in addition to make me a great addition to your
               team.
             </p>
+            <h2 className='text-stone-900 capitalize'>I speak:</h2>
           </p>
+          <div className='flex flex-row items-center justify-center mb-10 w-full gap-3'>
+            {languages.map((language) => {
+              return (
+                <div
+                  key={language.id}
+                  className='flex gap-2 items-center'
+                >
+                  <span className='text-xl'>{language.name}</span>
+                  {/* <span>{language.designation}</span> */}
+                  <img
+                    src={language.src}
+                    alt={language.designation}
+                    className='w-10 h-10 hover:scale-105'
+                  />
+                </div>
+              )
+            })}
+          </div>
         </article>
       </div>
     </section>

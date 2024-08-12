@@ -1,10 +1,11 @@
 import { myStory } from '../data'
+import { AppleCardsCarouselDemo } from './AppleCardsCarouselDemo'
 import SectionTitle from './SectionTitle'
 
 function MyStory() {
   return (
     <>
-      <section
+      {/* <section
         className='py-20  align-element'
         id='story'
       >
@@ -24,7 +25,8 @@ function MyStory() {
             </article>
           </div>
         ))}
-      </section>
+      </section> */}
+      <AppleCardsCarouselDemo />
     </>
   )
 }

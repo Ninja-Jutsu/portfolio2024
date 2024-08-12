@@ -8,9 +8,9 @@ const Hero = () => {
         <article className='z-10'>
           <TypewriterEffectSmooth
             words={[
-              { text: 'Hi,', className: 'text-7xl font-bold tracking-wider' },
-              { text: "I'm", className: 'text-7xl font-bold tracking-wider' },
-              { text: 'Ismail', className: 'text-7xl font-bold tracking-wider' },
+              { text: 'Hi,', className: 'text-5xl sm:text-7xl font-bold tracking-wider' },
+              { text: "I'm", className: 'text-5xl sm:text-7xl font-bold tracking-wider' },
+              { text: 'Ismail', className: 'text-5xl sm:text-7xl font-bold tracking-wider' },
             ]}
             duration={1}
           />
@@ -27,19 +27,19 @@ const Hero = () => {
             words={[
               {
                 text: 'Code',
-                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-5xl font-bold',
+                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-3xl sm:text-5xl font-bold',
               },
               {
                 text: 'crafted',
-                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-5xl font-bold',
+                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-3xl sm:text-5xl font-bold',
               },
               {
                 text: 'dreams',
-                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-5xl font-bold',
+                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-3xl sm:text-5xl font-bold',
               },
               {
                 text: 'shaped',
-                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-5xl font-bold',
+                className: 'mt-2 text-stone-700 capitalize tracking-wide font-quote text-3xl sm:text-5xl font-bold',
               },
             ]}
             delay={2}

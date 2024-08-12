@@ -14,7 +14,10 @@ const Hero = () => {
 
   return (
     <>
-      <div className='align-element'>
+      <div
+        className='align-element'
+        id='contact'
+      >
         <SectionTitle text='Contact' />
       </div>
       <article
@@ -32,7 +35,7 @@ const Hero = () => {
               <article className='z-10'>
                 <TypewriterEffectSmooth
                   words={[
-                    { text: 'Reach,', className: 'text-7xl font-bold tracking-wider' },
+                    { text: 'Reach', className: 'text-7xl font-bold tracking-wider' },
                     { text: 'out ', className: 'text-7xl font-bold tracking-wider' },
                   ]}
                   duration={1}
@@ -41,7 +44,7 @@ const Hero = () => {
                   words={[
                     {
                       text: "Let's create something amazing together",
-                      className: 'text-xl mt-4 ms:text-3xl text-stone-700 tracking-wide',
+                      className: 'text-3xl mt-4 text-stone-700 tracking-wide',
                     },
                   ]}
                   delay={1}
@@ -95,7 +98,7 @@ const Hero = () => {
               <article className='z-10'>
                 <TypewriterEffectSmooth
                   words={[
-                    { text: 'Reach,', className: 'text-6xl font-bold tracking-wider' },
+                    { text: 'Reach', className: 'text-6xl font-bold tracking-wider' },
                     { text: 'out ', className: 'text-6xl font-bold tracking-wider' },
                   ]}
                   duration={1}

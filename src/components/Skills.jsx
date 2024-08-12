@@ -7,16 +7,14 @@ const items = skills.map((skill) => {
   return { title: skill.title, key: skill.id, icon: skill.icon, quote: skill.text }
 })
 
-console.log(items)
-
 const Skills = () => {
   return (
     <section
-      className='py-10 align-element'
+      className='py-10 align-element px-8'
       id='skills'
     >
       <SectionTitle text='tech stack' />
-      <div className='py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:hidden'>
+      <div className='py-8 sm:py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:hidden'>
         {skills.map((skill) => {
           return (
             <SkillsCard

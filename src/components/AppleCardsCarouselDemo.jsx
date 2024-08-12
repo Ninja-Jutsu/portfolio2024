@@ -16,7 +16,7 @@ export function AppleCardsCarouselDemo() {
   return (
     <>
       <div
-        className='align-element'
+        className='align-element px-8'
         id='story'
       >
         <SectionTitle text='Journey to Web Dev' />

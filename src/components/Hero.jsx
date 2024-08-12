@@ -3,7 +3,7 @@ import { FaGithubSquare, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { TypewriterEffectSmooth } from './ui/typewriter-effect'
 const Hero = () => {
   return (
-    <section className='bg-teal-300 py-24 font-poppins'>
+    <section className='py-10 sm:py-24 font-poppins'>
       <div className='align-element grid  md:grid-cols-2 items-center gap-8'>
         <article className='z-10'>
           <TypewriterEffectSmooth
@@ -45,7 +45,7 @@ const Hero = () => {
             delay={2}
             duration={2}
           />
-          <div className='flex gap-x-4 mt-4'>
+          <div className='flex gap-x-4 mt-10'>
             <a
               href='https://github.com/Ninja-Jutsu'
               target='_blank'

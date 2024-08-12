@@ -1,6 +1,6 @@
-import { myStory } from '../data'
+// import { myStory } from '../data'
 import { AppleCardsCarouselDemo } from './AppleCardsCarouselDemo'
-import SectionTitle from './SectionTitle'
+// import SectionTitle from './SectionTitle'
 
 function MyStory() {
   return (
@@ -26,7 +26,9 @@ function MyStory() {
           </div>
         ))}
       </section> */}
-      <AppleCardsCarouselDemo />
+      <div className='align-element'>
+        <AppleCardsCarouselDemo />
+      </div>
     </>
   )
 }

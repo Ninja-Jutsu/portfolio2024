@@ -77,7 +77,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
   return (
     <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
-      <div className='relative w-full'>
+      <div className='relative w-full  '>
         <div
           className='flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]'
           ref={carouselRef}
@@ -115,20 +115,20 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className='flex justify-center gap-2 mr-10'>
+        <div className=' justify-center gap-2 mr-10 hidden md:flex mb-10'>
           <button
             className='relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50'
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
-            <IconArrowNarrowLeft className='h-10 w-10 text-white bg-teal-300' />
+            <IconArrowNarrowLeft className='md:h-10 md:w-10 text-white bg-stone-500' />
           </button>
           <button
             className='relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50'
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
-            <IconArrowNarrowRight className='h-10 w-10 text-white bg-teal-300' />
+            <IconArrowNarrowRight className='md:h-10 md:w-10 text-white bg-stone-500' />
           </button>
         </div>
       </div>
@@ -206,7 +206,7 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
               >
                 {card.title}
               </motion.p>
-              <div className='py-10 text-2xl'>{card.content}</div>
+              <div className='py-10 sm:text-2xl'>{card.content}</div>
             </motion.div>
           </div>
         )}
@@ -228,13 +228,13 @@ export const Card = ({ card, index, layout = false }: { card: Card; index: numbe
             layoutId={layout ? `title-${card.title}` : undefined}
             className='text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2'
           >
+            <p className='text-black mb-5 capitalize opacity-50'>Read me</p>
             {card.title}
           </motion.p>
         </div>
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
           className='object-cover absolute z-10 inset-0'
         />
       </motion.button>

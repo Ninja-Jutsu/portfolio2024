@@ -10,7 +10,7 @@ export const WavyBackground = ({
   colors,
   waveWidth,
   backgroundFill,
-  blur = 10,
+  blur = 20,
   speed = 'fast',
   waveOpacity = 0.7,
   ...props
@@ -96,9 +96,9 @@ export const WavyBackground = ({
   }, [])
 
   return (
-    <div className={cn('h-max sm:h-screen flex flex-col items-center justify-center ', containerClassName)}>
+    <div className={cn('h-max sm:h-max flex flex-col items-center justify-center ', containerClassName)}>
       <canvas
-        className='hidden sm:block absolute inset-0 z-0 '
+        className='hidden sm:block absolute inset-0 z-0 h-[50vh] w-screen'
         ref={canvasRef}
         id='canvas'
         style={{

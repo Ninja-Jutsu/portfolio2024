@@ -49,7 +49,7 @@ export const skills = [
     id: nanoid(),
     title: 'Javascript',
     icon: <FaJs className='h-16 w-16 text-amber-400' />,
-    text: 'Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality',
+    text: 'Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality.',
   },
   {
     id: nanoid(),
@@ -73,7 +73,7 @@ export const skills = [
     id: nanoid(),
     title: 'NodeJS',
     icon: <FaNodeJs className='h-16 w-16 text-emerald-500' />,
-    text: 'Proficient in utilizing Node.js for server-side development, real-time applications, and API creation',
+    text: 'Proficient in utilizing Node.js for server-side development, real-time applications, and API creation.',
   },
   {
     id: nanoid(),
@@ -195,7 +195,7 @@ export const projects = [
     url: 'https://trace-it-v2.vercel.app/',
     github: 'https://github.com/Ninja-Jutsu/trace-it-v2',
     title: 'Trace-it',
-    text: 'Accelerate software development with our robust issue tracking tool. Easily create, assign, and prioritize tasks to enhance team collaboration and project management. Ideal for agile development teams',
+    text: 'Accelerate software development with our robust issue tracking tool. Easily create, assign, and prioritize tasks to enhance team collaboration and project management. Ideal for agile development teams.',
     techStack: [
       <RiNextjsFill
         key={nanoid()}
@@ -231,95 +231,7 @@ export const projects = [
   },
 ]
 
-export const myStory = [
-  {
-    title: 'Early Tech Enthusiast',
-    img: Phase1,
-    story: (
-      <p>
-        My innate curiosity about how things worked led me to a deep fascination with technology. <br /> As a teenager,
-        I immersed myself in the world of computers, spending countless hours experimenting with hardware and software.
-        <br />
-        This early exposure to problem-solving and troubleshooting fostered a strong foundation in logical thinking and
-        critical analysis. <br /> I quickly developed a reputation as a tech-savvy individual among my peers, often
-        called upon to resolve computer-related issues. <br /> These experiences honed my ability to diagnose problems
-        efficiently and implement effective solutions.
-      </p>
-    ),
-    direction: 'right',
-  },
-  {
-    title: 'Neurology Student',
-    img: Phase2,
-    story: (
-      <p>
-        While pursuing a degree in Neurology, I maintained a strong interest in technology. <br /> The field of
-        neuroscience exposed me to complex systems and the importance of data analysis. <br /> I applied these
-        principles to my understanding of technology, developing a keen eye for identifying patterns and optimizing
-        processes. <br /> Although seemingly unrelated, my neurology studies contributed to my ability to think
-        critically, analyze information, and approach problems from multiple perspectives.
-      </p>
-    ),
-    direction: 'left',
-  },
-  {
-    title: 'First job: Technical Advisor',
-    img: Phase3,
-    story: (
-      <p>
-        My role as a technical advisor provided invaluable hands-on experience with internet infrastructure.
-        <br /> Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers,
-        modems, and network configurations.
-        <br /> From understanding basic TCP/IP protocols to diagnosing complex hardware malfunctions, I developed a
-        strong foundation in networking fundamentals.
-        <br />I honed my ability to break down technical jargon into plain language, explaining complex issues in a way
-        that was easily understandable.
-        <br /> This experience cultivated strong communication and interpersonal skills, essential for building rapport
-        with clients and effectively resolving their problems.
-        <br /> Additionally, I gained exposure to different operating systems and software applications, expanding my
-        technical knowledge base.
-      </p>
-    ),
-    direction: 'right',
-  },
-  {
-    title: 'Retail Manager',
-    img: Phase4,
-    story: (
-      <p>
-        Transitioning from the academic world to the fast-paced retail environment presented a unique set of challenges.
-        <br />
-        As a retail manager, I honed my ability to lead and motivate teams while simultaneously managing complex
-        operational tasks. <br /> This role demanded exceptional problem-solving skills, as I frequently encountered
-        unexpected challenges that required quick and decisive action. <br /> Moreover, retail provided invaluable
-        experience in customer service and relationship building. <br /> Understanding and meeting customer needs became
-        paramount, and I developed a strong ability to communicate effectively and build rapport. <br />
-        These skills, combined with my technical background, have proven to be a valuable asset in various professional
-        settings. <br />
-      </p>
-    ),
-    direction: 'left',
-  },
-  {
-    title: 'Self-Taught Web Developer',
-    img: Phase5,
-    story: (
-      <p>
-        Driven by a passion for technology and a desire for a career change, I embarked on a self-taught journey into
-        web development. <br /> Leveraging online resources, tutorials, and personal projects, I immersed myself in the
-        world of HTML, CSS, and JavaScript. <br /> The transition from a structured learning environment to
-        self-directed learning required discipline and perseverance. <br /> Through countless hours of coding and
-        experimentation, I developed a strong foundation in front-end development. <br /> I challenged myself by
-        building personal projects, gradually increasing the complexity of my creations. <br /> This hands-on approach
-        allowed me to solidify my understanding of web development principles and apply them to real-world scenarios.
-        <br /> The self-learning process also fostered a strong problem-solving mindset. <br /> Encountering and
-        overcoming coding challenges became an integral part of my growth. <br /> I learned to break down complex
-        problems into smaller, manageable steps, and to seek out solutions through online communities and forums. <br />
-      </p>
-    ),
-    direction: 'right',
-  },
-]
+
 
 export const contactLinks = [
   {
@@ -350,11 +262,11 @@ export const Cards = [
     src: Phase1,
     content: (
       <p>
-        My innate curiosity about how things worked led me to a deep fascination with technology. <br /> As a teenager,
+        My innate curiosity about how things worked led me to a deep fascination with technology. As a teenager,
         I immersed myself in the world of computers, spending countless hours experimenting with hardware and software.
         <br />
         This early exposure to problem-solving and troubleshooting fostered a strong foundation in logical thinking and
-        critical analysis. <br /> I quickly developed a reputation as a tech-savvy individual among my peers, often
+        critical analysis.  I quickly developed a reputation as a tech-savvy individual among my peers, often
         called upon to resolve computer-related issues. <br /> These experiences honed my ability to diagnose problems
         efficiently and implement effective solutions.
       </p>
@@ -365,7 +277,7 @@ export const Cards = [
     src: Phase2,
     content: (
       <p>
-        While pursuing a degree in Neurology, I maintained a strong interest in technology. <br /> The field of
+        While pursuing a degree in Neurology, I maintained a strong interest in technology.  The field of
         neuroscience exposed me to complex systems and the importance of data analysis. <br /> I applied these
         principles to my understanding of technology, developing a keen eye for identifying patterns and optimizing
         processes. <br /> Although seemingly unrelated, my neurology studies contributed to my ability to think
@@ -379,15 +291,15 @@ export const Cards = [
     content: (
       <p>
         My role as a technical advisor provided invaluable hands-on experience with internet infrastructure.
-        <br /> Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers,
+        Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers,
         modems, and network configurations.
         <br /> From understanding basic TCP/IP protocols to diagnosing complex hardware malfunctions, I developed a
         strong foundation in networking fundamentals.
-        <br />I honed my ability to break down technical jargon into plain language, explaining complex issues in a way
+        I honed my ability to break down technical jargon into plain language, explaining complex issues in a way
         that was easily understandable.
         <br /> This experience cultivated strong communication and interpersonal skills, essential for building rapport
         with clients and effectively resolving their problems.
-        <br /> Additionally, I gained exposure to different operating systems and software applications, expanding my
+         Additionally, I gained exposure to different operating systems and software applications, expanding my
         technical knowledge base.
       </p>
     ),
@@ -398,14 +310,14 @@ export const Cards = [
     content: (
       <p>
         Transitioning from the academic world to the fast-paced retail environment presented a unique set of challenges.
-        <br />
+        
         As a retail manager, I honed my ability to lead and motivate teams while simultaneously managing complex
         operational tasks. <br /> This role demanded exceptional problem-solving skills, as I frequently encountered
-        unexpected challenges that required quick and decisive action. <br /> Moreover, retail provided invaluable
+        unexpected challenges that required quick and decisive action.  Moreover, retail provided invaluable
         experience in customer service and relationship building. <br /> Understanding and meeting customer needs became
-        paramount, and I developed a strong ability to communicate effectively and build rapport. <br />
+        paramount, and I developed a strong ability to communicate effectively and build rapport.
         These skills, combined with my technical background, have proven to be a valuable asset in various professional
-        settings. <br />
+        settings.
       </p>
     ),
   },
@@ -415,15 +327,15 @@ export const Cards = [
     content: (
       <p>
         Driven by a passion for technology and a desire for a career change, I embarked on a self-taught journey into
-        web development. <br /> Leveraging online resources, tutorials, and personal projects, I immersed myself in the
+        web development.  Leveraging online resources, tutorials, and personal projects, I immersed myself in the
         world of HTML, CSS, and JavaScript. <br /> The transition from a structured learning environment to
-        self-directed learning required discipline and perseverance. <br /> Through countless hours of coding and
+        self-directed learning required discipline and perseverance.  Through countless hours of coding and
         experimentation, I developed a strong foundation in front-end development. <br /> I challenged myself by
-        building personal projects, gradually increasing the complexity of my creations. <br /> This hands-on approach
+        building personal projects, gradually increasing the complexity of my creations.  This hands-on approach
         allowed me to solidify my understanding of web development principles and apply them to real-world scenarios.
-        <br /> The self-learning process also fostered a strong problem-solving mindset. <br /> Encountering and
+        <br /> The self-learning process also fostered a strong problem-solving mindset.  Encountering and
         overcoming coding challenges became an integral part of my growth. <br /> I learned to break down complex
-        problems into smaller, manageable steps, and to seek out solutions through online communities and forums. <br />
+        problems into smaller, manageable steps, and to seek out solutions through online communities and forums.
       </p>
     ),
   },
@@ -437,13 +349,13 @@ export const languages = [
     src: french,
   },
   {
-    id: 1,
+    id: 2,
     name: 'English',
     designation: 'Proficient',
     src: english,
   },
   {
-    id: 1,
+    id: 3,
     name: 'Arabic',
     designation: 'Native',
     src: arabic,

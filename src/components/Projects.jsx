@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle'
 const Projects = () => {
   return (
     <section
-      className='py-20 align-element'
+      className='align-element px-2 sm:px-8'
       id='projects'
     >
       <SectionTitle text='Featured Projects' />

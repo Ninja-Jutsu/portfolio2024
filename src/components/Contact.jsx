@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className='align-element'
+        className='align-element px-8'
         id='contact'
       >
         <SectionTitle text='Contact' />
@@ -30,7 +30,7 @@ const Hero = () => {
           waveWidth={20}
           className='hidden sm:block'
         >
-          <section className='bg-white py-24 font-poppins'>
+          <section className=' py-8 font-poppins'>
             <div className='align-element flex flex-col gap-8'>
               <article className='z-10'>
                 <TypewriterEffectSmooth
@@ -93,7 +93,7 @@ const Hero = () => {
           </section>
         </WavyBackground>
         <MeteorsDemo>
-          <section className='sm:hidden bg-white py-4 mb-10 font-poppins'>
+          <section className='sm:hidden  px-5 py-2 mb-10 font-poppins'>
             <div className='align-element flex flex-col gap-8'>
               <article className='z-10'>
                 <TypewriterEffectSmooth

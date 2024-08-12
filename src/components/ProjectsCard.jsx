@@ -12,8 +12,8 @@ const ProjectsCard = ({ url, Logo, github, title, text, techStack }) => {
           <MeteorsDemo>{Logo}</MeteorsDemo>
         </div>
         <div className='p-8'>
-          <h2 className='text-xl tracking-wide font-medium capitalize'>{title}</h2>
-          <p className='mt-4 text-stone-700 leading-loose'>{text}</p>
+          <h2 className='text-xl tracking-wide capitalize text-center font-semibold font-poppins'>{title}</h2>
+          <p className='mt-4 text-stone-700 leading-loose text-center'>{text}</p>
           <div className='mt-4 flex gap-x-8 justify-center items-center'>
             <a
               href={url}

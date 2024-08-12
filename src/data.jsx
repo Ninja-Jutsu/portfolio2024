@@ -30,7 +30,7 @@ export const links = [
   { id: nanoid(), href: '#about', text: 'about' },
   { id: nanoid(), href: '#skills', text: 'skills' },
   { id: nanoid(), href: '#projects', text: 'projects' },
-  { id: nanoid(), href: '#story', text: 'My story' },
+  { id: nanoid(), href: '#story', text: 'Story' },
 ]
 
 export const skills = [

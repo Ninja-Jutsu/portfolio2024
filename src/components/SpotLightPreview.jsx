@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Spotlight } from './ui/Spotlight'
 
 export default function SpotlightPreview({ children }) {

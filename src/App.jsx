@@ -5,12 +5,15 @@ import About from './components/About'
 import Projects from './components/Projects'
 import MyStory from './components/MyStory'
 import Contact from './components/Contact'
+import SpotlightPreview from './components/SpotLightPreview'
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Hero />
+      <SpotlightPreview>
+        <NavBar />
+        <Hero />
+      </SpotlightPreview>
       <Skills />
       <About />
       <Projects />

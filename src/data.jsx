@@ -89,10 +89,8 @@ export const skills = [
   },
 ]
 
-// import { FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase, FaGitAlt } from 'react-icons/fa'
 
-// import { RiNextjsFill } from 'react-icons/ri'
-// import { SiTypescript } from 'react-icons/si'
+const iconSize = 'h-16 w-16'
 export const projects = [
   {
     id: nanoid(),
@@ -110,32 +108,32 @@ export const projects = [
       <RiNextjsFill
         key={nanoid()}
         name='NextJS'
-        className='h-8 w-8 text-stone-700 hover:text-black duration-300'
+        className={`${iconSize} text-stone-700 hover:text-black duration-300`}
       />,
       <FaReact
         key={nanoid()}
         name='React'
-        className='h-8 w-8 text-blue-500 hover:text-black duration-300'
+        className={`${iconSize} text-blue-500 hover:text-black duration-300`}
       />,
       <SiTypescript
         key={nanoid()}
         name='Typescript'
-        className='h-8 w-8 text-indigo-500 hover:text-black duration-300'
+        className={`${iconSize} text-indigo-500 hover:text-black duration-300`}
       />,
       <DiMysql
         key={nanoid()}
         name='MySQL & MongoDB'
-        className='h-8 w-8 text-indigo-500 hover:text-black duration-300'
+        className={`${iconSize} text-indigo-500 hover:text-black duration-300`}
       />,
       <RiTailwindCssFill
         key={nanoid()}
         name='Tailwind'
-        className='h-8 w-8 text-cyan-500 hover:text-black duration-300'
+        className={`${iconSize} text-cyan-500 hover:text-black duration-300`}
       />,
       <SiShadcnui
         name='Shadcn'
         key={nanoid()}
-        className='h-8 w-8 text-black-500 hover:text-black duration-300'
+        className={`${iconSize} text-black-500 hover:text-black duration-300`}
       />,
     ],
   },
@@ -155,32 +153,32 @@ export const projects = [
       <RiNextjsFill
         key={nanoid()}
         name='NextJS'
-        className='h-8 w-8 text-stone-700 hover:text-black duration-300'
+        className={`${iconSize} text-stone-700 hover:text-black duration-300`}
       />,
       <FaReact
         key={nanoid()}
         name='React'
-        className='h-8 w-8 text-blue-500 hover:text-black duration-300'
+        className={`${iconSize} text-blue-500 hover:text-black duration-300`}
       />,
       <SiTypescript
         key={nanoid()}
         name='Typescript'
-        className='h-8 w-8 text-indigo-500 hover:text-black duration-300'
+        className={`${iconSize} text-indigo-500 hover:text-black duration-300`}
       />,
       <DiMysql
         key={nanoid()}
         name='MySQL & MongoDB'
-        className='h-8 w-8 text-blue-500 hover:text-black duration-300'
+        className={`${iconSize} text-blue-500 hover:text-black duration-300`}
       />,
       <RiTailwindCssFill
         key={nanoid()}
         name='Tailwind'
-        className='h-8 w-8 text-cyan-500 hover:text-black duration-300'
+        className={`${iconSize} text-cyan-500 hover:text-black duration-300`}
       />,
       <SiShadcnui
         key={nanoid()}
         name='Shadcn'
-        className='h-8 w-8 text-black-500 hover:text-black duration-300'
+        className={`${iconSize} text-black-500 hover:text-black duration-300`}
       />,
     ],
   },
@@ -200,32 +198,32 @@ export const projects = [
       <RiNextjsFill
         key={nanoid()}
         name='NextJS'
-        className='h-8 w-8 text-stone-700 hover:text-black duration-300'
+        className={`${iconSize} text-stone-700 hover:text-black duration-300`}
       />,
       <FaReact
         key={nanoid()}
         name='React'
-        className='h-8 w-8 text-blue-500 hover:text-black duration-300'
+        className={`${iconSize} text-blue-500 hover:text-black duration-300`}
       />,
       <SiTypescript
         key={nanoid()}
         name='Typescript'
-        className='h-8 w-8 text-indigo-500 hover:text-black duration-300'
+        className={`${iconSize} text-indigo-500 hover:text-black duration-300`}
       />,
       <DiMongodb
         key={nanoid()}
         name='Mongodb'
-        className='h-8 w-8 text-green-500 hover:text-black duration-300'
+        className={`${iconSize} text-green-500 hover:text-black duration-300`}
       />,
       <SiRadixui
         key={nanoid()}
         name='Radixui'
-        className='h-8 w-8 text-purple-500 hover:text-black duration-300'
+        className={`${iconSize} text-purple-500 hover:text-black duration-300`}
       />,
       <FaMarkdown
         key={nanoid()}
         name='Markdown'
-        className='h-8 w-8 text-black-500 hover:text-black duration-300'
+        className={`${iconSize} text-black-500 hover:text-black duration-300`}
       />,
     ],
   },

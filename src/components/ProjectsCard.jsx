@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
+
+import { FaGithubSquare } from 'react-icons/fa'
 import { TbWorldWww } from 'react-icons/tb'
 import { MeteorsDemo } from './MeteorsDemo'
 import { BackgroundGradient } from './ui/background-gradient'
@@ -33,13 +33,11 @@ const ProjectsCard = ({ url, Logo, github, title, text, techStack }) => {
             </a>
           </div>
         </div>
-        <MeteorsDemo>
-          <div className='capitalize p-8 flex gap-x-2 justify-center items-center'>
-            {techStack.map((item) => {
-              return item
-            })}
-          </div>
-        </MeteorsDemo>
+        <div className='capitalize p-8 flex gap-x-2 justify-center items-center'>
+          {techStack.map((item) => {
+            return item
+          })}
+        </div>
       </article>
     </BackgroundGradient>
   )

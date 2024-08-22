@@ -18,6 +18,8 @@ const About = () => {
             <img
               src={aboutSvg}
               className='w-[full] h-full'
+              width='300'
+              height='300'
             />
           </GlareCard>
         </div>

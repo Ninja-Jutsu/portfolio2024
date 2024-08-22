@@ -7,7 +7,7 @@ import { BackgroundGradient } from './ui/background-gradient'
 const ProjectsCard = ({ url, Logo, github, title, text, techStack }) => {
   return (
     <BackgroundGradient>
-      <article className='bg-white rounded-lg p-1 shadow-md block hover:shadow-2xl  duration-300 '>
+      <article className='bg-white rounded-lg p-1 shadow-md block hover:shadow-2xl  duration-300'>
         <div className='flex justify-center p-5'>
           <MeteorsDemo>{Logo}</MeteorsDemo>
         </div>

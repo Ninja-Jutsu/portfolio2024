@@ -3,7 +3,7 @@ import { Spotlight } from './ui/Spotlight'
 
 export default function SpotlightPreview({ children }) {
   return (
-    <div className='h-max w-screen rounded-md flex md:items-center md:justify-center bg-stone-400 antialiased  relative overflow-hidden'>
+    <div className='h-max w-screen rounded-md flex md:items-center md:justify-center bg-transparent antialiased  relative overflow-hidden'>
       <Spotlight
         className='-top-40 left-0 md:left-60 md:-top-20'
         fill='white'

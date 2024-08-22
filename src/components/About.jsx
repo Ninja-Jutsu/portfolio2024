@@ -17,9 +17,7 @@ const About = () => {
           <GlareCard>
             <img
               src={aboutSvg}
-              className='w-[full] h-full'
-              width='300'
-              height='300'
+              className='w-[400px] h-[500px] object-cover'
             />
           </GlareCard>
         </div>
@@ -28,21 +26,20 @@ const About = () => {
           src={aboutSvg}
           className='w-full h-full rounded-full sm:hidden'
         />
-        <article>
+        <article className='-ml-5'>
           <p className='text-stone-900 text-l mt-8 leading-loose md:2xl lg:text-2xl tracking-wide'>
             Hi there, this is Ismail, a 30-year-old web developer making waves in the digital landscape of Singapore. My
             toolkit includes
-            <span className='text-stone-800 font-poppins italic'> HTML, CSS, JavaScript</span> and much more, but my real
-            superpower lies in turning concepts into captivating experiences. I&apos;m particularly interested in
+            <span className='text-stone-800 font-poppins italic'> HTML, CSS, JavaScript</span> and much more, but my
+            real superpower lies in turning concepts into captivating experiences. I&apos;m particularly interested in
             exploring modern frameworks like
             <span className='text-stone-800 font-poppins italic'> React and NextJS</span>. <br />
             <span>
-            My technical problem-solving skills combined with experience leading a large team make me a valuable asset.
+              My technical problem-solving skills combined with experience leading a large team make me a valuable
+              asset.
             </span>
           </p>
-          <h2 className='text-stone-900 leading-loose lg:text-2xl tracking-wide mt-8 mb-4 font-poppins'>
-            I speak:
-          </h2>
+          <h2 className='text-stone-900 leading-loose lg:text-2xl tracking-wide mt-8 mb-4 font-poppins'>I speak:</h2>
           <div className='flex flex-row items-center justify-start mb-10 w-full sm:gap-10'>
             {languages.map((language) => {
               return (

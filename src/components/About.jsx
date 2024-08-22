@@ -5,7 +5,7 @@ import { languages } from '../data'
 const About = () => {
   return (
     <section
-      className='sm:py-20 px-8'
+      className='mt-0 p-10 sm:-mt-10 sm:py-10'
       id='about'
     >
       <div className='align-element px-8 mb-5'>
@@ -31,28 +31,35 @@ const About = () => {
             Hi there, this is Ismail, a 30-year-old web developer making waves in the digital landscape of Singapore. My
             toolkit includes
             <span className='text-stone-800 font-poppins italic'> HTML, CSS, JavaScript</span> and much more, but my
-            real superpower lies in turning concepts into captivating experiences. I&apos;m particularly interested in
-            exploring modern frameworks like
-            <span className='text-stone-800 font-poppins italic'> React and NextJS</span>. <br />
-            <span>
-              My technical problem-solving skills combined with experience leading a large team make me a valuable
-              asset.
-            </span>
+            real superpower lies in turning concepts into captivating experiences.
+            <ul className='mt-5'>
+              <li className='mb-2'>
+                - I have a strong foundation in JavaScript and am skilled in utilizing React  in addition to the new Next.js framework to develop
+                robust web applications.
+              </li>
+              <li className='mb-2'>
+                - I possess a deep understanding and proficiency in database systems, including MySQL and MongoDB.
+              </li>
+              <li className='mb-2'>
+                - Driven by my passion for JavaScript, I utilize Node.js to create scalable and efficient backend
+                architectures.
+              </li>
+            </ul>
           </p>
           <h2 className='text-stone-900 leading-loose lg:text-2xl tracking-wide mt-8 mb-4 font-poppins'>I speak:</h2>
-          <div className='flex flex-row items-center justify-start mb-10 w-full sm:gap-10'>
+          <div className='flex flex-row items-center justify-start mb-10 w-full gap-4 sm:gap-10'>
             {languages.map((language) => {
               return (
                 <div
                   key={language.id}
-                  className='flex gap-2 items-center'
+                  className='flex items-center gap-1'
                 >
                   <img
                     src={language.src}
                     alt={language.designation}
-                    className='w-10 h-10 hover:scale-105 mr-5 sm:mr-0'
+                    className='w-10 h-10 hover:scale-105 sm:mr-0'
                   />
-                  <span className='text-xl hidden sm:block'>{language.name}</span>
+                  <span className='text-sm sm:text-xl block'>{language.name}</span>
                 </div>
               )
             })}

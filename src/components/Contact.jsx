@@ -33,7 +33,7 @@ const Hero = () => {
           <section className=' py-8 font-poppins'>
             <div className='align-element flex flex-col gap-8'>
               <article className='z-10'>
-              <p className='text-7xl font-bold tracking-wider'>Reach  out</p>, 
+              <p className='text-7xl font-bold tracking-wider'>Reach out</p>, 
               <TypewriterEffectSmooth
                   words={[
                     {
@@ -90,13 +90,7 @@ const Hero = () => {
         <section className='sm:hidden  px-5 py-2 mb-10 font-poppins'>
           <div className='align-element flex flex-col gap-8'>
             <article className='z-10'>
-              <TypewriterEffectSmooth
-                words={[
-                  { text: 'Reach', className: 'text-6xl font-bold tracking-wider' },
-                  { text: 'out ', className: 'text-6xl font-bold tracking-wider' },
-                ]}
-                duration={1}
-              />
+              <p className= 'text-6xl font-bold tracking-wider'>Reach out</p>
               <TypewriterEffectSmooth
                 words={[
                   {
@@ -107,7 +101,7 @@ const Hero = () => {
                 delay={1}
                 duration={1}
               />
-              <div className='grid grid-cols-2 justify-center items-start gap-x-8 mt-4 flex-wrap'>
+              <div className='flex justify-center items-start gap-x-8 mt-4 flex-wrap'>
                 <a href='mailto:ismail.bardach.work@gmail.com'>
                   <CiMail className='h-10 w-10 text-stone-500 hover:text-red-500 duration-300' />
                 </a>

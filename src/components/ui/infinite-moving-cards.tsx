@@ -90,7 +90,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden='true'
                 className='user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]'
               ></div>
-              <div className='relative z-20 mt-2 flex flex-row items-center px-2'>
+              <div className='relative z-20 mb-3 flex flex-row items-center px-2'>
                 <span className='flex flex-col gap-1 justify-center items-center'>
                   <span className=' text-l leading-[1.6] text-stone-900 font-normal'>{item.icon}</span>
                   <span className=' text-l leading-[1.6] text-stone-900 font-normal'>{item.title}</span>

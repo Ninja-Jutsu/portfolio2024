@@ -47,7 +47,7 @@ const Skills = () => {
         </div>
       )}
       {animationShown && (
-        <div className='py-8 sm:py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <article className='py-8 sm:py-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {skills.map((skill) => {
             return (
               <SkillsCard
@@ -56,7 +56,7 @@ const Skills = () => {
               />
             )
           })}
-        </div>
+        </article>
       )}
     </section>
   )

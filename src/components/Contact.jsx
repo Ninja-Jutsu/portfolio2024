@@ -8,12 +8,11 @@ import { CiMail } from 'react-icons/ci'
 import { FaXTwitter } from 'react-icons/fa6'
 import { FaWhatsapp } from 'react-icons/fa'
 import React from 'react'
-import { MeteorsDemo } from './MeteorsDemo'
 const Hero = () => {
   const [showNum, setShowNum] = React.useState(false)
 
   return (
-    <>
+    <section>
       <div
         className='align-element px-8'
         id='contact'
@@ -33,8 +32,8 @@ const Hero = () => {
           <section className=' py-8 font-poppins'>
             <div className='align-element flex flex-col gap-8'>
               <article className='z-10'>
-              <p className='text-7xl font-bold tracking-wider'>Reach out</p>, 
-              <TypewriterEffectSmooth
+                <p className='text-7xl font-bold tracking-wider'>Reach out</p>,
+                <TypewriterEffectSmooth
                   words={[
                     {
                       text: "Let's create something amazing together",
@@ -90,7 +89,7 @@ const Hero = () => {
         <section className='sm:hidden  px-5 py-2 mb-10 font-poppins'>
           <div className='align-element flex flex-col gap-8'>
             <article className='z-10'>
-              <p className= 'text-6xl font-bold tracking-wider'>Reach out</p>
+              <p className='text-6xl font-bold tracking-wider'>Reach out</p>
               <TypewriterEffectSmooth
                 words={[
                   {
@@ -143,7 +142,7 @@ const Hero = () => {
           </div>
         </section>
       </article>
-    </>
+    </section>
   )
 }
 export default Hero

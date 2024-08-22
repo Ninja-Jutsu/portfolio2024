@@ -9,7 +9,7 @@ const Projects = () => {
       id='projects'
     >
       <SectionTitle text='Featured Projects' />
-      <div className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8'>
+      <article className='py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8'>
         {projects.map((project) => {
           return (
             <ProjectsCard
@@ -18,7 +18,7 @@ const Projects = () => {
             />
           )
         })}
-      </div>
+      </article>
     </section>
   )
 }

@@ -48,7 +48,7 @@ export function ExpandableCardDemo() {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === 'object' ? (
-          <div className='fixed inset-0  grid place-items-center z-[100]'>
+          <div className='fixed inset-0 grid place-items-center z-[100]'>
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -72,20 +72,22 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className='h-screen sm:h-[70vh] sm:w-[70vw] flex flex-col bg-neutral-50 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden'
+              className='h-screen sm:h-max sm:w-[70vw] flex flex-col bg-neutral-50 dark:bg-neutral-900 sm:rounded-sm overflow-hidden'
             >
-              <motion.div
+              {/* <motion.div
                 layoutId={`image-${active.title}-${id}`}
                 className='flex justify-center'
               >
-                <img
-                  width={200}
-                  height={200}
-                  src={active.src}
-                  alt={active.title}
-                  className='w-80 h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top'
-                />
-              </motion.div>
+                <div className='w-[100px] h-[100px] object-cover'>
+                  <img
+                    width='100px'
+                    height='100px'
+                    src={active.src}
+                    alt={active.title}
+                    className='w-80 h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top opacity-10'
+                  />
+                </div>
+              </motion.div> */}
 
               <div>
                 <div className='flex justify-between items-start p-4'>
@@ -110,7 +112,7 @@ export function ExpandableCardDemo() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className='text-l sm:text-3xl text-neutral-600  h-40 md:h-max pb-10 flex flex-col items-start gap-4 dark:text-neutral-400'
+                    className='text-l sm:text-2xl text-neutral-600  h-40 md:h-max pb-10 flex flex-col items-start gap-4 dark:text-neutral-400'
                   >
                     {typeof active.content === 'function' ? active.content() : active.content}
                   </motion.div>
@@ -271,10 +273,9 @@ const cards = [
         <p>
           My role as a technical advisor provided invaluable hands-on experience with internet infrastructure. <br />
           Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers, modems,
-          and network configurations.
-          From understanding basic TCP/IP protocols to diagnosing complex hardware malfunctions, I developed a
-          strong foundation in networking fundamentals. I honed my ability to break down technical jargon into plain
-          language, explaining complex issues in a way that was easily understandable.
+          and network configurations. From understanding basic TCP/IP protocols to diagnosing complex hardware
+          malfunctions, I developed a strong foundation in networking fundamentals. I honed my ability to break down
+          technical jargon into plain language, explaining complex issues in a way that was easily understandable.
           <br /> This experience cultivated strong communication and interpersonal skills, essential for building
           rapport with clients and effectively resolving their problems. Additionally, I gained exposure to different
           operating systems and software applications, expanding my technical knowledge base.
@@ -292,7 +293,7 @@ const cards = [
       return (
         <p>
           As a retail manager, I honed my ability to lead and motivate teams while simultaneously managing complex
-          operational tasks. <br/> This role demanded exceptional problem-solving skills, as I frequently encountered
+          operational tasks. <br /> This role demanded exceptional problem-solving skills, as I frequently encountered
           unexpected challenges that required quick and decisive action. Moreover, retail provided invaluable experience
           in customer service and relationship building. Understanding and meeting customer needs became paramount, and
           I developed a strong ability to communicate effectively and build rapport. These skills, combined with my

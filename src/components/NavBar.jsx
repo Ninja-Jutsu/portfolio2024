@@ -7,7 +7,7 @@ const items = links.map((link) => {
 const NavBar = () => {
   return (
     <nav >
-      <div className='align-element py-4 flex sm:flex-row sm:gap-x-16 sm:items-center justify-center sm:py-8 '>
+      <div className='align-element py-4 flex sm:flex-row sm:gap-x-16 sm:items-center justify-center  '>
         <div className='flex sm:gap-x-10'>
           {links.map(({ id, href, text }) => {
             return (

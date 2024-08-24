@@ -59,10 +59,10 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              'relative dark:text-neutral-50 items-center flex space-x-1 text-stone-600 dark:hover:text-neutral-300 hover:text-stone-400'
+              'relative dark:text-neutral-50 sm:px-5 items-center flex space-x-1 text-stone-600 dark:hover:text-neutral-300 hover:text-stone-400'
             )}
           >
-            <span className='block text-xl capitalize font-roboto'>{navItem.name}</span>
+            <span className='block text-xl sm:text-2xl capitalize font-roboto'>{navItem.name}</span>
           </a>
         ))}
       </motion.div>

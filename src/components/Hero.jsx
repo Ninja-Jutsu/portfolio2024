@@ -3,7 +3,7 @@ import { FaGithubSquare, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { TypewriterEffectSmooth } from './ui/typewriter-effect'
 const Hero = () => {
   return (
-    <section className='py-10 sm:py-24 font-poppins h-[60vh] -mt-10 sm:mt-0 flex sm:block'>
+    <section className='py-10 font-poppins h-[60vh] -mt-10  flex items-center'>
       <div className='align-element grid  md:grid-cols-2 items-center gap-8 pl-2'>
         <div className='z-10 text-white'>
           <h1 className='text-5xl sm:text-7xl font-bold tracking-wider text-nowrap'>Hi, I am Ismail</h1>

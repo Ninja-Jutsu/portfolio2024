@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import BackgroundBeamsDisplay from './components/BackGroundBeams'
 import { ExpandableCardDemo } from './components/ExpandableCards'
+import { TimelineDemo } from './components/TimeLine'
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <TimelineDemo />
       {/* <MyStory /> */}
-      <ExpandableCardDemo />
+      {/* <ExpandableCardDemo /> */}
       <Contact />
     </>
   )

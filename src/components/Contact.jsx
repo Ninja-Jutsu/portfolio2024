@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section>
       <div
-        className='align-element px-8'
+        className='align-element px-8 pt-5'
         id='contact'
       >
         <SectionTitle text='Contact' />

@@ -29,7 +29,7 @@ const Hero = () => {
           waveWidth={20}
           className='hidden sm:block'
         >
-          <section className=' py-8 font-poppins'>
+          <section className='pt-8 font-poppins'>
             <div className='align-element flex flex-col gap-8'>
               <article className='z-10'>
                 <p className='text-7xl font-bold tracking-wider'>Reach out</p>,
@@ -43,7 +43,7 @@ const Hero = () => {
                   delay={0}
                   duration={1}
                 />
-                <div className='flex gap-x-8 mt-4'>
+                <div className='flex gap-x-8 mt-4 justify-center'>
                   <a href='mailto:ismail.bardach.work@gmail.com'>
                     <CiMail className='h-16 w-16 text-stone-500 hover:text-red-500 duration-300' />
                   </a>
@@ -74,12 +74,14 @@ const Hero = () => {
                     }}
                   >
                     <FaWhatsapp className='h-16 w-16 text-stone-500 hover:text-green-500 duration-300' />
-                    {showNum && <span className='text-xl sm:text-3xl'>9376 8062</span>}
+                    {showNum && (
+                      <span className='text-xl sm:text-3xl'>9376 8062</span>
+                    )}
                   </button>
                 </div>
               </article>
-              <article className='flex flex-col gap-2 text-xl sm:text-3xl'>
-                <span>Ismail Bardach , Singapore Ⓒ 2024</span>
+              <article className='flex flex-col gap-2 items-center text-xl sm:text-3xl'>
+                <span>Ismail Bardach Ⓒ 2024</span>
                 <span> Built with: React.js, Aceternity & Framer Motion</span>
               </article>
             </div>
@@ -123,16 +125,6 @@ const Hero = () => {
                 >
                   <FaGithubSquare className='h-10 w-10 text-stone-500 hover:text-black duration-300' />
                 </a>
-                <button
-                  href='3'
-                  className='flex  items-center gap-2'
-                  onClick={() => {
-                    setShowNum(!showNum)
-                  }}
-                >
-                  <FaWhatsapp className='h-10 w-10 text-stone-500 hover:text-green-500 duration-300' />
-                  {showNum && <span className='text-xl sm:text-3xl'>9376 8062</span>}
-                </button>
               </div>
             </article>
             <article className='flex flex-col gap-2 text-xl sm:text-3xl'>

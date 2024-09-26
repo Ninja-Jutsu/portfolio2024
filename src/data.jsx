@@ -1,18 +1,23 @@
 /* eslint-disable no-unused-vars */
 import { nanoid } from 'nanoid'
-import { FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaMarkdown } from 'react-icons/fa'
+import {
+  FaDatabase,
+  FaGitAlt,
+  FaHtml5,
+  FaJs,
+  FaMarkdown,
+  FaNodeJs,
+  FaReact,
+} from 'react-icons/fa'
+import { GiMagicGate } from 'react-icons/gi'
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri'
-import { SiTypescript, SiRadixui, SiShadcnui } from 'react-icons/si'
+import { SiRadixui, SiShadcnui, SiTypescript } from 'react-icons/si'
 
-import { DiMysql, DiMongodb } from 'react-icons/di'
-import BookIt from './assets/images/book-it-final.png'
-import Hired from './assets/images/hired-final.png'
-import TraceIt from './assets/images/trace-it.png'
+import { DiMongodb, DiMysql } from 'react-icons/di'
 
 // Projects:
-import { FaBug } from 'react-icons/fa'
-import { GiCampingTent } from 'react-icons/gi'
 import { FaHireAHelper } from 'react-icons/fa6'
+import { GiCampingTent } from 'react-icons/gi'
 
 // My Story:
 import Phase1 from './assets/images/phase-1.png'
@@ -22,8 +27,8 @@ import Phase4 from './assets/images/phase-4.png'
 import Phase5 from './assets/images/phase-5.png'
 
 // Contact me:
-import { CiMail, CiLinkedin } from 'react-icons/ci'
-import { FiSmartphone, FiInstagram } from 'react-icons/fi'
+import { CiLinkedin, CiMail } from 'react-icons/ci'
+import { FiInstagram, FiSmartphone } from 'react-icons/fi'
 
 // Languages:
 import arabic from './assets/images/arabic.svg'
@@ -94,6 +99,51 @@ export const projects = [
   {
     id: nanoid(),
     Logo: (
+      <GiMagicGate
+        className='w-[200px] h-[200px]'
+        fill='black'
+      />
+    ),
+    url: 'https://bazaar-seven.vercel.app/',
+    github: 'https://github.com/Ninja-Jutsu/bazaar',
+    title: 'Bazaar',
+    text: 'A modern e-commerce platform built with Next.js, offering secure shopping and effortless product management. Discover, shop, and track your orders with an online marketplace designed for a seamless experience.',
+    techStack: [
+      <RiNextjsFill
+        key={nanoid()}
+        name='NextJS'
+        className={`${iconSize} text-stone-700 hover:text-black duration-300`}
+      />,
+      <FaReact
+        key={nanoid()}
+        name='React'
+        className={`${iconSize} text-blue-500 hover:text-black duration-300`}
+      />,
+      <SiTypescript
+        key={nanoid()}
+        name='Typescript'
+        className={`${iconSize} text-indigo-500 hover:text-black duration-300`}
+      />,
+      <DiMongodb
+        key={nanoid()}
+        name='Mongodb'
+        className={`${iconSize} text-green-500 hover:text-black duration-300`}
+      />,
+      <SiRadixui
+        key={nanoid()}
+        name='Radixui'
+        className={`${iconSize} text-purple-500 hover:text-black duration-300`}
+      />,
+      <FaMarkdown
+        key={nanoid()}
+        name='Markdown'
+        className={`${iconSize} text-black-500 hover:text-black duration-300`}
+      />,
+    ],
+  },
+  {
+    id: nanoid(),
+    Logo: (
       <GiCampingTent
         className='w-[200px] h-[200px]'
         fill='gold'
@@ -101,7 +151,7 @@ export const projects = [
     ),
     url: 'https://book-it-iota.vercel.app/',
     github: 'https://github.com/Ninja-Jutsu/Book-it',
-    title: 'Book-it (AirBnb Competitor)',
+    title: 'Book-it',
     text: 'Powered by Next.js 14+. Discover your perfect stay with our vacation rental platform. Find unique accommodations, from cozy apartments to luxurious homes, and book unforgettable experiences.',
     techStack: [
       <RiNextjsFill
@@ -146,7 +196,7 @@ export const projects = [
     ),
     url: 'https://hired-rho.vercel.app/',
     github: 'https://github.com/Ninja-Jutsu/hired',
-    title: 'Hired (Hunt & Track Jobs)',
+    title: 'Hired',
     text: 'Streamline your job search and boost your chances of landing your dream job with our intuitive job tracking app. Organize applications, schedule interviews, and stay on top of your job search journey.',
     techStack: [
       <RiNextjsFill
@@ -181,73 +231,36 @@ export const projects = [
       />,
     ],
   },
-  {
-    id: nanoid(),
-    Logo: (
-      <FaBug
-        className='w-[200px] h-[200px]'
-        fill='black'
-      />
-    ),
-    url: 'https://trace-it-v2.vercel.app/',
-    github: 'https://github.com/Ninja-Jutsu/trace-it-v2',
-    title: 'Trace-it',
-    text: 'Accelerate software development with our robust issue tracking tool. Easily create, assign, and prioritize tasks to enhance team collaboration and project management. Ideal for agile development teams.',
-    techStack: [
-      <RiNextjsFill
-        key={nanoid()}
-        name='NextJS'
-        className={`${iconSize} text-stone-700 hover:text-black duration-300`}
-      />,
-      <FaReact
-        key={nanoid()}
-        name='React'
-        className={`${iconSize} text-blue-500 hover:text-black duration-300`}
-      />,
-      <SiTypescript
-        key={nanoid()}
-        name='Typescript'
-        className={`${iconSize} text-indigo-500 hover:text-black duration-300`}
-      />,
-      <DiMongodb
-        key={nanoid()}
-        name='Mongodb'
-        className={`${iconSize} text-green-500 hover:text-black duration-300`}
-      />,
-      <SiRadixui
-        key={nanoid()}
-        name='Radixui'
-        className={`${iconSize} text-purple-500 hover:text-black duration-300`}
-      />,
-      <FaMarkdown
-        key={nanoid()}
-        name='Markdown'
-        className={`${iconSize} text-black-500 hover:text-black duration-300`}
-      />,
-    ],
-  },
 ]
 
 export const contactLinks = [
   {
     key: 1,
     link: 'https://www.linkedin.com/in/ismail-bardach-83921a190/',
-    icon: <CiLinkedin className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
+    icon: (
+      <CiLinkedin className='h-16 w-16 text-stone-700 hover:text-black duration-300' />
+    ),
   },
   {
     key: 2,
     link: 'https://www.instagram.com/ismail__bardach/',
-    icon: <FiInstagram className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
+    icon: (
+      <FiInstagram className='h-16 w-16 text-stone-700 hover:text-black duration-300' />
+    ),
   },
   {
     key: 3,
     link: '9376 8062',
-    icon: <FiSmartphone className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
+    icon: (
+      <FiSmartphone className='h-16 w-16 text-stone-700 hover:text-black duration-300' />
+    ),
   },
   {
     key: 4,
     link: 'mailto:ismail.bardach.work@gmail.com',
-    icon: <CiMail className='h-16 w-16 text-stone-700 hover:text-black duration-300' />,
+    icon: (
+      <CiMail className='h-16 w-16 text-stone-700 hover:text-black duration-300' />
+    ),
   },
 ]
 
@@ -257,17 +270,22 @@ export const Cards = [
     src: Phase1,
     content: (
       <p>
-        My innate curiosity about how things worked led me to a deep fascination with technology. As a teenager, I
-        immersed myself in the world of computers, spending countless hours experimenting with hardware and software.
-        I&apos;ve been building web things for almost as long as I can remember - I think my first website was a collection
-        of my favorite GIFs when I was 11 or 12, back in the “Welcome to my homepage, it&apos;s under construction, sign my
-        guestbook” days. It was rudimentary, but then so was everything else; it did about as much as every other
-        website at that time.
+        My innate curiosity about how things worked led me to a deep fascination
+        with technology. As a teenager, I immersed myself in the world of
+        computers, spending countless hours experimenting with hardware and
+        software. I&apos;ve been building web things for almost as long as I can
+        remember - I think my first website was a collection of my favorite GIFs
+        when I was 11 or 12, back in the “Welcome to my homepage, it&apos;s
+        under construction, sign my guestbook” days. It was rudimentary, but
+        then so was everything else; it did about as much as every other website
+        at that time.
         <br />
-        This early exposure to problem-solving and troubleshooting fostered a strong foundation in logical thinking and
-        critical analysis. I quickly developed a reputation as a tech-savvy individual among my peers, often called upon
-        to resolve computer-related issues. <br /> These experiences honed my ability to diagnose problems efficiently
-        and implement effective solutions.
+        This early exposure to problem-solving and troubleshooting fostered a
+        strong foundation in logical thinking and critical analysis. I quickly
+        developed a reputation as a tech-savvy individual among my peers, often
+        called upon to resolve computer-related issues. <br /> These experiences
+        honed my ability to diagnose problems efficiently and implement
+        effective solutions.
       </p>
     ),
   },
@@ -276,11 +294,13 @@ export const Cards = [
     src: Phase2,
     content: (
       <p>
-        While pursuing a degree in Neurology, I maintained a strong interest in technology. The field of neuroscience
-        exposed me to complex systems and the importance of data analysis. <br /> I applied these principles to my
-        understanding of technology, developing a keen eye for identifying patterns and optimizing processes. <br />{' '}
-        Although seemingly unrelated, my neurology studies contributed to my ability to think critically, analyze
-        information, and approach problems from multiple perspectives.
+        While pursuing a degree in Neurology, I maintained a strong interest in
+        technology. The field of neuroscience exposed me to complex systems and
+        the importance of data analysis. <br /> I applied these principles to my
+        understanding of technology, developing a keen eye for identifying
+        patterns and optimizing processes. <br /> Although seemingly unrelated,
+        my neurology studies contributed to my ability to think critically,
+        analyze information, and approach problems from multiple perspectives.
       </p>
     ),
   },
@@ -289,15 +309,20 @@ export const Cards = [
     src: Phase3,
     content: (
       <p>
-        My role as a technical advisor provided invaluable hands-on experience with internet infrastructure.
-        Troubleshooting a wide range of internet connectivity issues exposed me to the intricacies of routers, modems,
+        My role as a technical advisor provided invaluable hands-on experience
+        with internet infrastructure. Troubleshooting a wide range of internet
+        connectivity issues exposed me to the intricacies of routers, modems,
         and network configurations.
-        <br /> From understanding basic TCP/IP protocols to diagnosing complex hardware malfunctions, I developed a
-        strong foundation in networking fundamentals. I honed my ability to break down technical jargon into plain
-        language, explaining complex issues in a way that was easily understandable.
-        <br /> This experience cultivated strong communication and interpersonal skills, essential for building rapport
-        with clients and effectively resolving their problems. Additionally, I gained exposure to different operating
-        systems and software applications, expanding my technical knowledge base.
+        <br /> From understanding basic TCP/IP protocols to diagnosing complex
+        hardware malfunctions, I developed a strong foundation in networking
+        fundamentals. I honed my ability to break down technical jargon into
+        plain language, explaining complex issues in a way that was easily
+        understandable.
+        <br /> This experience cultivated strong communication and interpersonal
+        skills, essential for building rapport with clients and effectively
+        resolving their problems. Additionally, I gained exposure to different
+        operating systems and software applications, expanding my technical
+        knowledge base.
       </p>
     ),
   },
@@ -306,13 +331,18 @@ export const Cards = [
     src: Phase4,
     content: (
       <p>
-        Transitioning from the academic world to the fast-paced retail environment presented a unique set of challenges.
-        As a retail manager, I honed my ability to lead and motivate teams while simultaneously managing complex
-        operational tasks. <br /> This role demanded exceptional problem-solving skills, as I frequently encountered
-        unexpected challenges that required quick and decisive action. Moreover, retail provided invaluable experience
-        in customer service and relationship building. <br /> Understanding and meeting customer needs became paramount,
-        and I developed a strong ability to communicate effectively and build rapport. These skills, combined with my
-        technical background, have proven to be a valuable asset in various professional settings.
+        Transitioning from the academic world to the fast-paced retail
+        environment presented a unique set of challenges. As a retail manager, I
+        honed my ability to lead and motivate teams while simultaneously
+        managing complex operational tasks. <br /> This role demanded
+        exceptional problem-solving skills, as I frequently encountered
+        unexpected challenges that required quick and decisive action. Moreover,
+        retail provided invaluable experience in customer service and
+        relationship building. <br /> Understanding and meeting customer needs
+        became paramount, and I developed a strong ability to communicate
+        effectively and build rapport. These skills, combined with my technical
+        background, have proven to be a valuable asset in various professional
+        settings.
       </p>
     ),
   },
@@ -321,16 +351,22 @@ export const Cards = [
     src: Phase5,
     content: (
       <p>
-        Driven by a passion for technology and a desire for a career change, I embarked on a deeper self-taught journey into
-        web development. Leveraging online resources, tutorials, and personal projects, I immersed myself in the world
-        of HTML, CSS, and JavaScript. <br /> The transition from a structured learning environment to self-directed
-        learning required discipline and perseverance. Through countless months of coding and experimentation, I
-        developed a strong foundation in full stack development. <br /> I challenged myself by building personal
-        projects, gradually increasing the complexity of my creations. This hands-on approach allowed me to solidify my
-        understanding of web development principles and apply them to real-world scenarios.
-        <br /> The self-learning process also fostered a strong problem-solving mindset. Encountering and overcoming
-        coding challenges became an integral part of my growth. <br /> I learned to break down complex problems into
-        smaller, manageable steps, and to seek out solutions through online communities and forums.
+        Driven by a passion for technology and a desire for a career change, I
+        embarked on a deeper self-taught journey into web development.
+        Leveraging online resources, tutorials, and personal projects, I
+        immersed myself in the world of HTML, CSS, and JavaScript. <br /> The
+        transition from a structured learning environment to self-directed
+        learning required discipline and perseverance. Through countless months
+        of coding and experimentation, I developed a strong foundation in full
+        stack development. <br /> I challenged myself by building personal
+        projects, gradually increasing the complexity of my creations. This
+        hands-on approach allowed me to solidify my understanding of web
+        development principles and apply them to real-world scenarios.
+        <br /> The self-learning process also fostered a strong problem-solving
+        mindset. Encountering and overcoming coding challenges became an
+        integral part of my growth. <br /> I learned to break down complex
+        problems into smaller, manageable steps, and to seek out solutions
+        through online communities and forums.
       </p>
     ),
   },

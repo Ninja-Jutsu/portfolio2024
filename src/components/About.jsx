@@ -5,10 +5,10 @@ import { languages } from '../data'
 const About = () => {
   return (
     <section
-      className='mt-0 p-10 pb-0 sm:-mt-10 sm:py-10'
+      className='p-10 pb-0 sm:-mt-10 sm:py-10'
       id='about'
     >
-      <div className='align-element px-8 mb-5'>
+      <div className='align-element px-8 mb-5 mt-10'>
         <SectionTitle text='A Glimpse Inside' />
       </div>
 
@@ -29,44 +29,55 @@ const About = () => {
         <article className='-ml-5'>
           <div className='text-stone-900 text-l mt-8 leading-loose md:2xl lg:text-2xl tracking-wide flex flex-col gap-4'>
             <p>
-              As a seasoned web developer based in Singapore, I specialize in crafting engaging and user-centric digital
-              experiences. I&apos;m passionate about transforming ideas into reality, leveraging my skills to build
-              robust and scalable web applications.
+              As a Full Stack Web Developer based in Singapore, I specialize in
+              crafting engaging and user-centric digital experiences. I&apos;m
+              passionate about transforming ideas into reality, leveraging my
+              skills to build robust and scalable web applications.
             </p>
             <p>
-              My technical expertise encompasses a range of front-end and back-end technologies, including{' '}
-              <span className='text-blue-600'>JavaScript, React, Next.js, Node.js, MySQL, and MongoDB.</span>
+              My technical expertise encompasses a range of front-end and
+              back-end technologies, including but not limited to:{' '}
+              <span className='text-blue-600'>
+                JavaScript, React, Next.js, Node.js, MySQL, and MongoDB.
+              </span>
             </p>
             <div className='mt-5'>
               <h4 className='mb-2'>
-                In addition to my technical proficiency, I bring a strong set of soft skills to every project,
-                including:
+                In addition to my technical proficiency, I bring a strong set of
+                soft skills to every project, including:
               </h4>
               <ul className='ml-4'>
                 <li className='mb-2'>
-                  - <strong>Problem-Solving:</strong> I thrive on tackling complex challenges and devising creative
-                  solutions.
+                  - <strong>Problem-Solving:</strong> I thrive on tackling
+                  complex challenges and devising creative solutions.
                 </li>
                 <li className='mb-2'>
-                  - <strong>Communication:</strong>I excel at collaborating with team members and stakeholders, ensuring
-                  clear and effective communication throughout the development process.
+                  - <strong>Communication:</strong>I excel at collaborating with
+                  team members and stakeholders, ensuring clear and effective
+                  communication throughout the development process.
                 </li>
                 <li className='mb-2'>
-                  - <strong>Adaptability:</strong> The ever-evolving tech landscape demands flexibility, and I&apos;m
-                  adept at learning new technologies and adapting to changing project requirements.
+                  - <strong>Adaptability:</strong> The ever-evolving tech
+                  landscape demands flexibility, and I&apos;m adept at learning
+                  new technologies and adapting to changing project
+                  requirements.
                 </li>
                 <li className='mb-2'>
-                  - <strong>Time Management:</strong> I prioritize tasks effectively, ensuring timely project delivery
-                  without compromising quality.
+                  - <strong>Time Management:</strong> I prioritize tasks
+                  effectively, ensuring timely project delivery without
+                  compromising quality.
                 </li>
                 <li className='mb-2'>
-                  <strong>Attention to Detail:</strong> I&apos;m meticulous in my work, ensuring that every line of code
-                  is clean, efficient, and error-free.
+                  <strong>- Attention to Detail:</strong> I&apos;m meticulous in
+                  my work, ensuring that every line of code is clean, efficient,
+                  and error-free.
                 </li>
               </ul>
             </div>
           </div>
-          <h2 className='text-stone-900 leading-loose lg:text-2xl tracking-wide mt-8 mb-4 font-poppins'>I speak:</h2>
+          <h2 className='text-stone-900 leading-loose lg:text-2xl tracking-wide mt-8 mb-4 font-poppins'>
+            I speak:
+          </h2>
           <div className='flex flex-row items-center justify-start mb-10 w-full gap-4 sm:gap-10'>
             {languages.map((language) => {
               return (
@@ -79,7 +90,9 @@ const About = () => {
                     alt={language.designation}
                     className='w-10 h-10 hover:scale-105 sm:mr-0'
                   />
-                  <span className='text-sm sm:text-xl block'>{language.name}</span>
+                  <span className='text-sm sm:text-xl block'>
+                    {language.name}
+                  </span>
                 </div>
               )
             })}

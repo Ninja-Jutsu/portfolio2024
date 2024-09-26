@@ -6,7 +6,7 @@ import Projects from './components/Projects'
 // import MyStory from './components/MyStory'
 import Contact from './components/Contact'
 import BackgroundBeamsDisplay from './components/BackGroundBeams'
-import { ExpandableCardDemo } from './components/ExpandableCards'
+// import { ExpandableCardDemo } from './components/ExpandableCards'
 import { TimelineDemo } from './components/TimeLine'
 
 function App() {

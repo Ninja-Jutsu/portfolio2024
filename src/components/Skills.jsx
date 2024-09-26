@@ -18,7 +18,7 @@ const Skills = () => {
       <div className='flex justify-between'>
         <SectionTitle text='tech stack' />
         <button
-          className='hidden md:block'
+          className='hidden md:block border-2 border-stone-50 p-5 hover:border-stone-200 transition-all duration-500 ease-in-out'
           onClick={() => setAnimation(!animationShown)}
         >
           {animationShown ? 'Add animation' : 'Remove animation'}

@@ -36,7 +36,7 @@ const links = [
   {
     id: 4,
     name: 'Resume',
-    href: 'Ismail_Bardach_Resume.pdf',
+    href: '/resume-2024.pdf',
     image: (
       <PiReadCvLogoBold
         className={`${iconStyle} hover:text-emerald-400 duration-300`}

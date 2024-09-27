@@ -77,7 +77,7 @@ export const AnimatedTooltip = ({
           </AnimatePresence>
           <a
             href={href}
-            download='Ismail_Bardach_Resume-updated.pdf'
+            download='resume-2024.pdf'
           >
             {image}
           </a>

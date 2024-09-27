@@ -54,7 +54,7 @@ export const skills = [
     id: nanoid(),
     title: 'Javascript',
     icon: <FaJs className='h-16 w-16 text-amber-400' />,
-    text: 'Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality.',
+    text: 'Advanced proficiency in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality.',
   },
   {
     id: nanoid(),
@@ -84,13 +84,13 @@ export const skills = [
     id: nanoid(),
     title: 'MySQL & MongoDB',
     icon: <FaDatabase className='h-16 w-16 text-green-500' />,
-    text: 'SQL virtuoso, crafting efficient relational databases & NoSQL ninja, mastering document-oriented data storage. ',
+    text: 'Adept at utilizing a variety of database technologies, including relational (SQL) and NoSQL (document-oriented) databases, to meet specific project requirements. ',
   },
   {
     id: nanoid(),
     title: 'Git & Github actions',
     icon: <FaGitAlt className='h-16 w-16 text-teal-500' />,
-    text: 'Expert in version control with Git, leveraging GitHub for seamless collaboration.',
+    text: 'Proficient in version control with Git, leveraging GitHub for seamless collaboration.',
   },
 ]
 

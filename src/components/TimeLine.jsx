@@ -70,9 +70,8 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className='text-neutral-800  dark:text-neutral-200 text-xs md:text-xl font-normal mb-4'>
-            As a freelance web developer based in Singapore, I have successfully delivered over 10 high-quality websites
-            and applications, consistently meeting client expectations and earning an average satisfaction rating of 4.8
-            out of 5 stars. My technical proficiency spans a range of front-end and back-end technologies, including
+            As a freelance web developer based in Singapore, I have successfully worked on several websites
+            and applications. My technical proficiency spans a range of front-end and back-end technologies, including
             JavaScript, React, Node.js, TypeScript, CSS, and HTML. My commitment to quality, combined with strong
             problem-solving and communication skills, has resulted in repeat business and client referrals.
           </p>
